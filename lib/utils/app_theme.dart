@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color deepBlue = Color(0xFF0D47A1); 
+  static const Color deepBlue = Color.fromARGB(255, 3, 39, 92); 
 
   static final ThemeData lightTheme = ThemeData(
     primaryColor: deepBlue,
