@@ -1,16 +1,82 @@
-# timbu_peek
+# TimbuPeek
 
-A new Flutter project.
+A Product Catalogue just for you.
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Setup Instructions](#setup-instructions)
+- [Appetize.io Demo](#appetizeio-demo)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [License](#license)
 
-A few resources to get you started if this is your first Flutter project:
+## Introduction
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+TimbuPeek is a mobile application that displays a list of products fetched from the Timbu API. The app features a user-friendly and intuitive interface, supporting both light and dark themes. Users can click on a product to view detailed information, including a larger image, the full name, price, and description.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- Displays a list of products fetched from the Timbu API.
+- Supports light and dark themes.
+- Clickable product cards to view detailed information.
+
+## Screenshots
+
+![Splash Screen](assets/splash_screen.png)
+![Product List](assets/product_list.png)
+![Product Details](assets/product_details.png)
+
+## Setup Instructions
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/ioabdullahi/timbu_peek.git
+    cd timbu_peek
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    flutter pub get
+    ```
+
+3. **Generate native splash screen:**
+
+    ```bash
+    flutter pub run flutter_native_splash:create
+    ```
+
+4. **Run the application:**
+
+    ```bash
+    flutter run
+    ```
+
+## Appetize.io Demo
+
+[View the demo on Appetize.io](https://appetize.io/app/android/com.example.timbu_peek?device=pixel7&osVersion=13.0)
+
+
+## Dependencies
+
+- Flutter SDK
+- GetX
+- HTTP
+- Flutter Native Splash
+
+## Usage
+
+1. **Toggle Theme:**
+   - Click the theme switch button in the app bar to switch between light and dark themes.
+
+2. **View Products:**
+   - The home screen displays a grid of products fetched from the Timbu API.
+   - Click on any product card to view detailed information about the product.
+
+## License
+
+This project is licensed under the HNG License.
