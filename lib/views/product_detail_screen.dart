@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:timbu_peek/models/products_model.dart';
+import 'package:timbu_peek/theme_controller.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final ProductsModel product;
+  final ThemeController themeSwitchController = Get.put(ThemeController());
 
   ProductDetailScreen({required this.product});
 
@@ -11,6 +14,13 @@ class ProductDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(product.name),
+        foregroundColor: Colors.white,
+        actions: [
+          Obx(() => IconButton(
+            icon: Icon(themeSwitchController.isDarkTheme.value ? Icons.dark_mode : Icons.light_mode),
+            onPressed: themeSwitchController.toggleTheme,
+          )),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -43,6 +53,7 @@ class ProductDetailScreen extends StatelessWidget {
                 '\₦${product.price.toStringAsFixed(2)}',
                 style: TextStyle(
                   fontSize: 20,
+                  fontWeight: FontWeight.w600,
                   color: Colors.green[700],
                 ),
               ),
@@ -51,7 +62,7 @@ class ProductDetailScreen extends StatelessWidget {
                 product.description,
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.grey[800],
+                  color: Colors.blue[800],
                 ),
               ),
             ],

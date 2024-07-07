@@ -74,6 +74,7 @@ class ProductsScreen extends StatelessWidget {
                           '\₦${product.price.toStringAsFixed(2)}',
                           style: TextStyle(
                             fontSize: 14,
+                            fontWeight: FontWeight.w600,
                             color: Colors.green[700],
                           ),
                         ),

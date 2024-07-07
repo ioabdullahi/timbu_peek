@@ -11,7 +11,7 @@ class ProductsModel {
       String imageUrl = 'https://via.placeholder.com/150';
       
     if (json['photos'] != null && json['photos'].isNotEmpty) {
-      imageUrl = 'https://your-image-hosting-url/' + json['photos'][0]['url'];
+      imageUrl = 'https://api.timbu.cloud/images/' + json['photos'][0]['url'];
     }
 
     double price = 0.0;
