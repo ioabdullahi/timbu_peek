@@ -9,6 +9,7 @@ A Product Catalogue just for you.
 - [Screenshots](#screenshots)
 - [Setup Instructions](#setup-instructions)
 - [Appetize.io Demo](#appetizeio-demo)
+- [APK Download Link](#apk-download-link)
 - [Dependencies](#dependencies)
 - [Usage](#usage)
 - [License](#license)
@@ -60,6 +61,9 @@ TimbuPeek is a mobile application that displays a list of products fetched from 
 
 [View the demo on Appetize.io](https://appetize.io/app/android/com.example.timbu_peek?device=pixel7&osVersion=13.0)
 
+## APK Download Link
+
+[Download the APK](https://drive.google.com/file/d/1w2ixmLNFommcgX9oOMcsN7etuDbaIqdA/view?usp=drive_link)
 
 ## Dependencies
 
